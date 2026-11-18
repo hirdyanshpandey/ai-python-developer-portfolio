@@ -1,0 +1,17 @@
+/* Shared portfolio navigation. Used by every public HTML page. */
+#site-header,#site-footer{display:block;margin:0;padding:0;border:0;background:#fafafa;color:#111;font:16px/1.5 Inter,system-ui,sans-serif;letter-spacing:normal;text-align:left}
+#site-header *,#site-footer *{box-sizing:border-box}
+#site-header .site-shell,#site-footer .site-shell{width:min(1130px,calc(100% - 64px));margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px;padding:16px 0}
+#site-header .site-shell{border-bottom:1px solid #d3d3d3}
+#site-footer .site-shell{border-top:1px solid #d3d3d3;min-height:88px}
+#site-header .site-logo{font:800 28px/1 Inter,system-ui,sans-serif;flex:0 0 auto;text-decoration:none;color:#111;white-space:nowrap}
+#site-header .site-logo span{color:#111}
+#site-header nav,#site-footer nav{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:12px 22px;font:400 14px/1.6 Inter,system-ui,sans-serif;letter-spacing:normal;margin:0;padding:0}
+#site-header nav a,#site-footer nav a,#site-footer .site-owner{color:#111;text-decoration:none;border:0;background:none;padding:0;margin:0}
+#site-header nav a:hover,#site-footer nav a:hover,#site-footer .site-owner:hover{text-decoration:underline;text-underline-offset:4px}
+#site-footer .site-owner{font-weight:700;white-space:nowrap}
+#site-header a:focus-visible,#site-footer a:focus-visible,.site-skip:focus-visible{outline:2px solid #111;outline-offset:5px}
+.site-skip{position:absolute;left:12px;top:10px;transform:translateY(-200%);background:#fff;color:#111;padding:10px;z-index:9999}
+.site-skip:focus{transform:none}
+@media(max-width:770px){#site-header .site-shell,#site-footer .site-shell{width:calc(100% - 32px);gap:16px}#site-header nav,#site-footer nav{gap:8px 16px}}
+@media(max-width:560px){#site-header .site-shell{align-items:flex-start}#site-header nav{font-size:13px;gap:7px 13px}#site-footer .site-shell{align-items:flex-start;flex-direction:column;gap:14px;padding:24px 0}#site-footer nav{justify-content:flex-start;font-size:13px}}
