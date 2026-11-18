@@ -1,0 +1,8 @@
+/tools/ /tools.html 200
+/blog/ /blog.html 200
+/blog/mcp-security-checklist-2026/ /mcp-security-checklist-2026.html 200
+/tools-about/ /tools-about.html 200
+/csv-import-checker/ /csv-import-checker.html 200
+/json-to-pydantic/ /json-to-pydantic.html 200
+/env-key-diff/ /env-key-diff.html 200
+/postgres-error-helper/ /postgres-error-helper.html 200
