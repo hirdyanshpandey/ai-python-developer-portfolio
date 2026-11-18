@@ -15,3 +15,26 @@
 .site-skip:focus{transform:none}
 @media(max-width:770px){#site-header .site-shell,#site-footer .site-shell{width:calc(100% - 32px);gap:16px}#site-header nav,#site-footer nav{gap:8px 16px}}
 @media(max-width:560px){#site-header .site-shell{align-items:flex-start}#site-header nav{font-size:13px;gap:7px 13px}#site-footer .site-shell{align-items:flex-start;flex-direction:column;gap:14px;padding:24px 0}#site-footer nav{justify-content:flex-start;font-size:13px}}
+
+/* Native mobile disclosure: no script or desktop layout changes. */
+#site-header .site-mobile-menu{display:none}
+@media(max-width:700px){
+ #site-header .site-shell{position:relative;align-items:center;min-height:72px;padding:12px 0;gap:12px}
+ #site-header .site-desktop-nav{display:none}
+ #site-header .site-mobile-menu{display:block;margin-left:auto}
+ #site-header .site-mobile-menu summary{display:flex;align-items:center;justify-content:center;gap:12px;min-width:96px;min-height:44px;padding:10px 14px;border:1px solid #d3d3d3;border-radius:8px;cursor:pointer;font:600 14px/1.3 Inter,system-ui,sans-serif;list-style:none;user-select:none}
+ #site-header .site-mobile-menu summary::-webkit-details-marker{display:none}
+ #site-header .site-mobile-menu summary:focus-visible{outline:2px solid #111;outline-offset:3px}
+ #site-header .site-menu-icon{display:block;width:17px;height:12px;border-top:2px solid #111;border-bottom:2px solid #111;position:relative}
+ #site-header .site-menu-icon::after{content:"";position:absolute;left:0;right:0;top:4px;border-top:2px solid #111}
+ #site-header .site-mobile-menu[open] summary{background:#111;color:#fff;border-color:#111}
+ #site-header .site-mobile-menu[open] .site-menu-icon{border-color:#fff}
+ #site-header .site-mobile-menu[open] .site-menu-icon::after{border-color:#fff}
+ #site-header .site-mobile-menu nav{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:1000;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:10px;border:1px solid #d3d3d3;border-radius:12px;background:#fafafa;box-shadow:0 12px 28px #00000016;font-size:14px}
+ #site-header .site-mobile-menu nav a{display:flex;align-items:center;min-height:46px;padding:10px 12px;border-radius:6px;overflow-wrap:anywhere}
+ #site-header .site-mobile-menu nav a:hover{background:#ededed;text-decoration:none}
+ #site-footer .site-shell{display:flex;flex-direction:column;align-items:stretch;gap:14px;padding:24px 0;min-height:0}
+ #site-footer .site-owner{display:block;font-size:16px;min-height:32px;line-height:32px}
+ #site-footer nav{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;justify-content:stretch;font-size:14px}
+ #site-footer nav a{display:flex;align-items:center;min-height:44px;border-bottom:1px solid #e3e3e3}
+}
